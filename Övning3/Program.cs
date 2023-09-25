@@ -5,7 +5,7 @@ using Övning3;
 try
 {
 
-    Console.WriteLine("3.1 Enacapsulation Task \n");
+    Console.WriteLine("\n\n3.1 Enacapsulation Task \n");
     //Person person1 = new Person(); /* Instance of person class*/
 
     //To create Instance of PersonHandler
@@ -56,17 +56,22 @@ foreach (UserError error in errors)
 
 Console.WriteLine("\n\n3.3 Inheritance Task \n");
 
-List<Animal> inhertance_animals = new List<Animal>
+List<Animal> animals = new List<Animal>
 {
-    new Horse("Horse1", 500, 5, 4),
-    new Dog("Tommy", 11, 4, "Husky"),
-    new Hedgehog("Rosy", 30, 13, 250),
-    new Worm("Spindy", 2, 30, true),
-    new Wolf("Edward", 70, 26, "silver")
+    new Horse("Napier_Dog", 500, 5, 4),
+    new Dog("Tommy_Dog", 11, 4, "Husky"),
+    new Hedgehog("Rosy_Hedehog", 30, 13, 250),
+    new Worm("Spindy_Worm", 2, 30, true),
+    new Wolf("Edward_Wolf", 70, 26, "silver"),
+    new Wolfman("Swetha_WolfMan",77,22,"Black"),
+    new Bird("Jasmine_Peacock",2,3,2.0),
+    new Pelican("Adam_Pelican",5,3,2.0,"Pink"),
+   new Flamingo("Kuku_Flamingo",5,3,2.0,5.0),
+   new Swan("Cheeky_Swan",5,3,2.0,5.99)
 
 };
 
-foreach (Animal animal in inhertance_animals)
+foreach (Animal animal in animals)
 {
     animal.Dosound();
 }
@@ -75,16 +80,6 @@ foreach (Animal animal in inhertance_animals)
 
 Console.WriteLine("\n\n3.4 Polymorphism ExtendedTask \n");
 
-List<Animal> animals = new List<Animal>
-{
-    new Horse("Napier_Dog", 500, 5, 4),
-    new Dog("Tommy_Dog", 11, 4, "Husky"),
-    new Hedgehog("Rosy_Hedehog", 30, 13, 250),
-    new Worm("Spindy_Worm", 2, 30, true),
-    new Wolf("Edward_Wolf", 70, 26, "silver"),
-    new Wolfman("Swetha_WolfMan",77,22,"Black")
-
-};
 
 foreach (Animal animal in animals)
 {

@@ -17,6 +17,10 @@ namespace Övning3
         {
             Console.WriteLine("The bird chirps.");
         }
+         public override string Stats()
+        {
+            return base.Stats() + $", Wing: {WingSpan}";
+        }
     }
     public class Pelican : Bird // Inherited from subclass named Bird
     {
@@ -25,6 +29,10 @@ namespace Övning3
         public Pelican(string name, double weight, int age, double wingSpan, string beakColor) : base(name, weight, age, wingSpan)
         {
             BeakColor = beakColor;
+        }
+        public override string Stats()
+        {
+            return base.Stats() + $", Beakcolor: {BeakColor}";
         }
     }
     public class Flamingo : Bird
@@ -35,6 +43,10 @@ namespace Övning3
         {
             LegLength = legLength;
         }
+         public override string Stats()
+        {
+            return base.Stats() + $", Leglength: {LegLength}";
+        }
     }
     public class Swan : Bird
     {
@@ -43,6 +55,10 @@ namespace Övning3
         public Swan(string name, double weight, int age, double wingSpan, double neckLength) : base(name, weight, age, wingSpan)
         {
             NeckLength = neckLength;
+        }
+         public override string Stats()
+        {
+            return base.Stats() + $", Necklength: {NeckLength}";
         }
     }
 }
