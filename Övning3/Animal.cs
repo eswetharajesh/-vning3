@@ -59,7 +59,7 @@ namespace Övning3
 
         public string OptionalMethod() //15, New optional method(3.4)
         {
-            return "this is an optional method that returns only string";
+            return "This is an optional method that returns only string";
         }
     }
     public class Hedgehog : Animal

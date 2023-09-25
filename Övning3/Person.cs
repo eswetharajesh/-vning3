@@ -29,7 +29,7 @@ namespace Övning3
             get { return fName; }
             set
             {
-                if(!string.IsNullOrEmpty(value) || value.Length < 2 || value.Length > 10)
+                if(string.IsNullOrEmpty(value) || value.Length < 2 || value.Length > 10)
                     throw new ArgumentException("First name must be between 2 or 10 characters.");
                 fName = value;
             }
@@ -39,7 +39,7 @@ namespace Övning3
             get { return lName; }
             set
             {
-                if (!string.IsNullOrEmpty(value) || value.Length < 3 || value.Length > 15)
+                if (string.IsNullOrEmpty(value) || value.Length < 3 || value.Length > 15)
                     throw new ArgumentException("Last name must be between 2 or 10 characters.");
                 lName = value;
             }

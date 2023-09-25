@@ -23,6 +23,6 @@ namespace Övning3
             person.Weight = weight;
             return person;
         }
-        public string GetPersonInfo(Person person) => $"Age: {person.Age}, First Name: {person.FName}, Last Name: {person.LName}, Height: {person.Height},Weight: {person.Weight}";
+        public string GetPersonInfo(Person person) => $"First Name: {person.FName},\nLast Name: {person.LName},\nAge: {person.Age},\nHeight: {person.Height},\nWeight: {person.Weight}";
     }
 }
